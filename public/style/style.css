@@ -1,0 +1,45 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0px;
+}
+
+.pages {
+    display: flex;
+}
+
+.pages p a {
+    text-decoration: none;
+    color: black;
+    margin: 10px 20px
+}
+
+header h1 {
+    padding-bottom: 15px;
+    margin-left: 20px;
+}
+main {
+    background: #eeeeee;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+header, footer {
+    background: #cccccc;
+    padding: 16px 32px;
+}
+
+section {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+footer {
+    text-align: center;
+}
