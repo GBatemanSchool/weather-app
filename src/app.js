@@ -4,6 +4,7 @@ const path = require('path')
 const hbs = require('hbs')
 const forecast = require('./utils/forecast')
 const geoLocate = require('./utils/geolocate')
+const request = require("request");
 
 //Directories
 const publicDir = path.join(__dirname, "../public")
@@ -12,6 +13,7 @@ const partialsDir = path.join(__dirname, "../templates/partials")
 
 //Express App
 const app = express()
+const port = process.env.PORT || 3000
 
 //Current Year
 d = new Date()
@@ -76,6 +78,6 @@ app.get('', (req, res) => {
         })
     })
 //Starts Server
-app.listen(3000, () => {
+app.listen(port, () => {
 
 })
